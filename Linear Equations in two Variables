@@ -1,0 +1,20 @@
+// THIS PROGRAM WILL FIND THE SOLUTIONS OF LINEAR EQUATIONS IN TWO VARIABLES FOR YOU.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a1, a2, b1, b2, c1, c2;
+    float x, y;
+
+    cout << "Enter the linear equation in the form a1x + b1y + c1 = 0:" << endl;
+    cin >> a1 >> b1 >> c1;
+
+    cout << "Enter other linear equation in the form a2x + b2y + c2 = 0:" << endl;
+    cin >> a2 >> b2 >> c2;
+
+    x = (b1*c2-c1*b2)/(a1*b2-b1*a2);
+    y = (c1*a2-a1*c2)/(a1*b2-b1*a2);
+
+    cout << "x = " << x <<" and y = " << y << endl;
+    return 0;
+}
